@@ -5,39 +5,72 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e7e9; /* Light pastel pink background */
+    color: #3a3a3a;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #d95267; /* A strong pink for the header */
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    font-size: 2rem;
 }
 
-nav a {
-    margin: 0 15px;
-    color: #fff;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
+/* For overall spacing and alignment */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
 }
 
 section {
-    margin: 20px 0;
-    padding: 0 15px;
+    padding: 2rem 0;
+}
+
+h2 {
+    border-bottom: 2px solid #d95267; /* Matching the header color for consistency */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+p, a {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #d95267; /* Matching the header color for consistency */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* To make the images pop */
+img {
+    max-width: 100%;
+    border: 5px solid #d95267;
+    border-radius: 5px;
+}
+
+/* Aesthetic spacing for the term project section */
+.term-project {
+    background-color: #fff5f7; /* A softer pink for contrast */
+    padding: 20px;
+    border: 1px solid #d95267;
+    border-radius: 5px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #d95267;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+    font-size: 0.8rem;
 }
