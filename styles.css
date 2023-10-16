@@ -1,4 +1,4 @@
-* {
+*, *:before, *:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,71 +6,87 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f3e7e9; /* Light pastel pink background */
-    color: #3a3a3a;
+    background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); /* Modern gradient background */
+    color: #fff;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #d95267; /* A strong pink for the header */
+    background-color: rgba(0,0,0,0.1);
     color: #fff;
     text-align: center;
     padding: 1.5rem 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
 }
 
-/* For overall spacing and alignment */
 .container {
     max-width: 1200px;
     margin: auto;
-    padding: 0 20px;
+    padding: 20px;
+    flex: 1;
 }
 
 section {
     padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.7);
 }
 
 h2 {
-    border-bottom: 2px solid #d95267; /* Matching the header color for consistency */
-    padding-bottom: 10px;
+    font-size: 2rem;
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 p, a {
     margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
 a {
-    color: #d95267; /* Matching the header color for consistency */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
 }
 
-/* To make the images pop */
 img {
     max-width: 100%;
-    border: 5px solid #d95267;
-    border-radius: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
-/* Aesthetic spacing for the term project section */
+img:hover {
+    transform: scale(1.05);
+}
+
 .term-project {
-    background-color: #fff5f7; /* A softer pink for contrast */
     padding: 20px;
-    border: 1px solid #d95267;
-    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.7);
 }
 
 footer {
-    background-color: #d95267;
+    background-color: rgba(0,0,0,0.2);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 20px;
     font-size: 0.8rem;
+    letter-spacing: 2px;
 }
